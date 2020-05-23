@@ -1,3 +1,7 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*CSS Variables*/
 :root{
   --background: white;
   --headerbackground: #FFC65D;
@@ -12,7 +16,7 @@ html, body, body *{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
 }
