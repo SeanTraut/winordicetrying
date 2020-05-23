@@ -1,28 +1,29 @@
+
+:root{
+  --background: white;
+  --headerbackground: orange;
+  --text: black;
+  --button: lightgrey;
+  --buttonhover: grey;
+}
+
 /* Global Styles */
-* {
+html, body, body *{
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    font-family: Helvetica;
     margin: 0;
     padding: 0;
-    --text: black;
-    --hlbg: orange;
-    --bg: white;
-    --buttonbg: grey;
-    --hoverbg: lightgrey; 
 }
-body{
-    display: flex;
-    flex-direction: column;
-    font-family: Helvetica;
-}
-header{
-    display: flex;
-    flex-direction: column;
-    font-family: Helvetica;
+script{
+    display: none;
 }
 
 /* Header */
 .main-header{
-    background: hlbg;
+    border-bottom: 3px double rgba(0,0,0,.7);
+    background: var(--headerbackground);
     text-align: center;
 }
 .page-title-large{
@@ -31,16 +32,25 @@ header{
 .page-subtitle-large{
     font-size: 20px;
 }
+.main-nav ul{
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
 .main-nav a{
-    color: black;
+    color: var(--text);
     text-decoration: none;
 }
 .main-nav-button{
-    background: lightgrey;
-    border: 1px solid black;
+    background:var(--button);
+    border: 1px solid rgba(0,0,0,.7);
     border-radius: 5px;
     padding: 5px;
+    margin-right: 10px;
+}
+.main-nav-button:last-child{
+    margin-right: 0;
 }
 .main-nav-button:hover{
-    background: grey;
+    background: var(--buttonhover);
 }
