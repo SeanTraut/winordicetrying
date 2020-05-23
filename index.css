@@ -1,7 +1,8 @@
 :root{
   --background: white;
-  --headerbackground: #FFB52E;
-  --text: black;
+  --headerbackground: #FFC65D;
+  --darktext: black;
+  --lighttext: white;
   --button: #D18700;
   --buttonhover:#FFA500;
 }
@@ -21,9 +22,11 @@ script{
 
 /* Header */
 .main-header{
-    border-bottom: 3px double rgba(0,0,0,.5);
+    border-bottom: 1px solid rgba(0,0,0,.5);
     background: var(--headerbackground);
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,.5);
     text-align: center;
+    margin-bottom: 20px;
 }
 .top-banner{
     flex-direction: row;
@@ -32,7 +35,7 @@ script{
 }
 .top-die{
     font-size: 50px;
-    color:#FFFFFF;
+    color: var(--lighttext);
     text-shadow: 1px -1px 1px rgba(0,0,0,.5);
     transform: rotate(-23deg);
 }
@@ -52,7 +55,7 @@ script{
     margin: 5px;
 }
 .main-nav a{
-    color: #FFF7E8;
+    color: var(--lighttext);
     text-shadow: 0px 1px 1px rgba(0,0,0,.5);
     text-decoration: none;
 }
@@ -61,11 +64,19 @@ script{
     border: 1px solid rgba(0,0,0,.5);
     border-radius: 5px;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .main-nav-button:last-child{
     margin-right: 0;
 }
 .main-nav-button:hover{
     background: var(--buttonhover);
+}
+
+/* Body */
+project{
+    margin-top: 20px;
+}
+project:first-child{
+    margin-top: 0px;
 }
