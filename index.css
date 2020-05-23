@@ -1,0 +1,30 @@
+/* Global Styles */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+}
+
+/* Header */
+.main-header{
+    background: orange;
+    text-align: center;
+}
+.main-nav{
+    display: flex;
+    flex-direction: row;
+}
+.main-nav li{
+    list-style: none;
+}
+.main-nav a{
+    color: black;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color: red;
+}
