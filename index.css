@@ -2,8 +2,12 @@
 *{
     box-sizing: border-box;
 }
-
 body{
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+}
+header{
     display: flex;
     flex-direction: column;
     font-family: Helvetica;
@@ -14,11 +18,11 @@ body{
     background: orange;
     text-align: center;
 }
-.main-nav{
-    display: flex;
-    flex-direction: row;
+.main-nav ul{
+    padding: 0;
 }
 .main-nav li{
+    display: inline;
     list-style: none;
 }
 .main-nav a{
