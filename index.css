@@ -1,6 +1,13 @@
 /* Global Styles */
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --text: black;
+    --hlbg: orange;
+    --bg: white;
+    --buttonbg: grey;
+    --hoverbg: lightgrey; 
 }
 body{
     display: flex;
@@ -15,20 +22,25 @@ header{
 
 /* Header */
 .main-header{
-    background: orange;
+    background: hlbg;
     text-align: center;
 }
-.main-nav ul{
-    padding: 0;
+.page-title-large{
+    font-size: 36px;
 }
-.main-nav li{
-    display: inline;
-    list-style: none;
+.page-subtitle-large{
+    font-size: 20px;
 }
 .main-nav a{
     color: black;
     text-decoration: none;
 }
-.main-nav a:hover{
-    color: red;
+.main-nav-button{
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.main-nav-button:hover{
+    background: grey;
 }
