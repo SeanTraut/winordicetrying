@@ -82,7 +82,7 @@ script{
 /* Body */
 project{
     margin-top: 20px;
-    border-bottom: 2px solid var(--offblack);
+    border-bottom: 1px solid var(--offblack);
 }
 project:first-child{
     margin-top: 0px;
