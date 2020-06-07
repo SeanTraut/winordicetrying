@@ -84,3 +84,39 @@ project{
 project:first-child{
     margin-top: 0px;
 }
+
+.cat-power{
+    align-self: center;
+    position: relative;
+    animation: dancingcat 5s ease infinite alternate;
+    transition: all 1s ease;
+}
+.cat-power2{
+    align-self: center;
+    position: relative;
+    box-shadow: 10px 5px 20px 20px orange;
+}
+
+
+@keyframes dancingcat{
+    0%{
+        box-shadow: 10px 5px 20px 20px orange;
+        transform: rotate(15deg);
+        left: 0;
+    }
+    33%{
+        transform: rotate(345deg);
+        box-shadow: 10px -5px 20px 20px yellow;
+        left: 35%;
+    }
+    66%{
+        box-shadow: -10px 5px 20px 20px red;
+        transform: rotate(375deg);
+        left: -35%;
+    }
+    100%{
+        box-shadow: -10px -5px 20px 20px orange;
+        transform: rotate(15deg);
+        left: 0;
+    }
+}
