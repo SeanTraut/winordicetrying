@@ -3,12 +3,12 @@
 
 /*CSS Variables*/
 :root{
-  --background: white;
-  --headerbackground: #FFC65D;
-  --darktext: black;
-  --lighttext: white;
-  --button: #D18700;
-  --buttonhover:#FFA500;
+    --background: white;
+    --headerbackground: #FFC65D;
+    --darktext: black;
+    --lighttext: white;
+    --button: #D18700;
+    --buttonhover:#FFA500;
 }
 
 /* Global Styles */
@@ -82,8 +82,14 @@ script{
 project{
     margin-top: 20px;
 }
+
 project:first-child{
     margin-top: 0px;
+}
+
+.project-name{
+    color: var(--darktext);
+    text-decoration-color: var(--darktext);
 }
 
 .cat-power{
