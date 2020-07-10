@@ -3,7 +3,7 @@
 
 /*CSS Variables*/
 :root{
-    --background: white;
+    --background: #f1f1f1;
     --headerbackground: #FFC65D;
     --darktext: black;
     --lighttext: white;
@@ -19,6 +19,9 @@ html, body, body *{
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
+}
+body{
+    background: var(--background);
 }
 script{
     display: none;
@@ -80,7 +83,7 @@ script{
 
 /* Body */
 project{
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
 }
 
 project:first-child{
