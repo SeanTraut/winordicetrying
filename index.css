@@ -66,7 +66,7 @@ script{
     text-shadow: 0px 1px 1px rgba(0,0,0,.5);
     text-decoration: none;
 }
-.main-nav-button{
+.button{
     color: var(--lighttext);
     background:var(--button);
     border: 1px solid rgba(0,0,0,.5);
@@ -77,7 +77,7 @@ script{
 .main-nav-button:last-child{
     margin-right: 0;
 }
-.main-nav-button:hover{
+.button:hover{
     background: var(--buttonhover);
 }
 
@@ -95,6 +95,14 @@ project:first-child{
     text-decoration-color: var(--darktext);
 }
 
+.feedback{
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+}
+
+/* Konami Code */
 .cat-power{
     align-self: center;
     position: relative;
