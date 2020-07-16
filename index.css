@@ -61,7 +61,7 @@ script{
 }
 .main-nav ul{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 5px;
 }
 
@@ -72,6 +72,9 @@ script{
 }
 .main-nav a:hover{
     background: var(--buttonhover);
+}
+.main-nav-button{
+    margin-right: 200px;
 }
 .main-nav-button:last-child{
     margin-right: 0;
