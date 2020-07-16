@@ -62,48 +62,78 @@ script{
 .main-nav ul{
     flex-direction: row;
     justify-content: center;
-    margin: 5px;
+    margin: 0;
 }
-
 .main-nav a{
     color: inherit;
     text-shadow: 0px 1px 1px var(--offblack);
     text-decoration: none;
 }
+.main-nav-button{
+    padding: 5px 30px;
+    margin-right: 150px;
+}
 .main-nav-button:hover{
     background: var(--buttonhover);
-}
-.main-nav-button{
-    margin-right: 200px;
 }
 .main-nav-button:last-child{
     margin-right: 0;
 }
 
 /* Body */
-project{
-    max-width: 700px;
-    align-self: center;
-    position: relative;
-    margin: 20px 20px 0 20px;
-}
-
 project:first-child{
     margin-top: 0px;
 }
-
+project{
+    flex-direction: row;
+    align-items: center;
+    max-width: 1300px;
+    align-self: center;
+    margin: 20px 20px 0 20px;
+}
+blurb{
+    flex-direction: column;
+    max-width: 80ch;
+}
+cta{
+    flex-direction: row;
+    justify-content: center;
+}
 .project-name{
     color: var(--darktext);
     text-decoration-color: var(--darktext);
 }
 
-.project-example{
-    align-self: center;
-    position: relative;
-    border-radius: 5px;
-    max-width: 462px;
-    max-height: 447px;
+thumbnail{
+    flex-direction: column;
+    margin-left: 20px;
+    max-height: 200px;
+    max-width: 200px;
 }
+.expand-example img-shade{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+img-shade{
+    flex: 1 1 0px;
+    background: var(--offblack);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter .2s ease, background .2s ease;
+}
+.project-example{
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+    max-height: max-content;
+}
+
 .button{
     color: var(--lighttext);
     background:var(--button);
@@ -116,13 +146,14 @@ project:first-child{
     background: var(--buttonhover);
 }
 .feedback{
-    align-self: center;
     margin-top: 10px;
     text-decoration: none;
     text-align: center;
     width: 150px;
     height: 30px;
 }
+
+
 /* =========================================================== */
 /* Konami Code */
 .cat-power{

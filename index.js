@@ -1,3 +1,19 @@
+let thumbnails = document.querySelectorAll("thumbnail");
+
+for(let thumbnail of thumbnails){
+    thumbnail.onclick = toggle_thumbnail;
+};
+
+function toggle_thumbnail(event){
+    let thumbnail = event.currentTarget;
+    console.log(thumbnail, "called");
+    thumbnail.classList.toggle("expand-example");
+};
+
+/* 
+Cat Dance Legacy Code
+==============================
+
 let example = document.createElement("img");
 document.body.appendChild(example);
 example.setAttribute("src","http://placekitten.com/300/300");
@@ -34,4 +50,4 @@ function cycle(element, classArray){
     }
 
     element.classList.add(classArray[0]);
-};
+}; */
