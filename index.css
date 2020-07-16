@@ -106,9 +106,14 @@ cta{
 
 thumbnail{
     flex-direction: column;
+    height: 200px;
+    width: 200px;
+}
+thumbnail:first-child{
+    margin-right: 30px;
+}
+thumbnail:last-child{
     margin-left: 20px;
-    max-height: 200px;
-    max-width: 200px;
 }
 .expand-example img-shade{
     position: absolute;
@@ -116,14 +121,15 @@ thumbnail{
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    background: var(--offblack);
+    transition: backdrop-filter .1s ease, background .1s ease;
 }
 img-shade{
     flex: 1 1 0px;
-    background: var(--offblack);
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(3px);
-    transition: backdrop-filter .2s ease, background .2s ease;
 }
 .project-example{
     display: block;
