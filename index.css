@@ -104,6 +104,7 @@ project:first-child{
 
 .project-example{
     align-self: center;
+    border-radius: 5px;
     max-width: 462px;
     max-height: 447px;
 }
