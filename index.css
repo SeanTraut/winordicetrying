@@ -70,7 +70,7 @@ script{
     text-shadow: 0px 1px 1px var(--offblack);
     text-decoration: none;
 }
-.main-nav a:hover{
+.main-nav-button:hover{
     background: var(--buttonhover);
 }
 .main-nav-button{
